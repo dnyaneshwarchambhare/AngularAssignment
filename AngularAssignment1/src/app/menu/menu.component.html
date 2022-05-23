@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <h2>Menu Registration Form</h2>
+
+    <form [formGroup]="menuForm">
+
+    <div class="form-group">
+        <label> Menu Name </label>
+        <input type="text" formControlName="menuName" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Menu ID </label>
+        <input type="text" formControlName="menuId" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Menu Price </label>
+        <input type="text" formControlName="menuPrice" class="form-control">
+    </div>
+
+    </form>
+    
+    {{menuForm.value | json}}
+
+</div>
